@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     llm_timeout: float = 30.0
     max_pdf_size_bytes: int = 10 * 1024 * 1024  # 10 MB
     max_retries: int = 3
+    github_token: str = ""          # from GITHUB_TOKEN env var
 
     class Config:
         env_file = ".env"

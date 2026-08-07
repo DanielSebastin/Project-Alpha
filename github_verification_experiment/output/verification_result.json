@@ -1,0 +1,231 @@
+{
+  "username": "DanielSebastin",
+  "matched_skills": [
+    {
+      "resume_skill": "Python",
+      "github_skill": "Python",
+      "confidence": {
+        "score": 100,
+        "level": "VERY_HIGH"
+      },
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Project-Alpha",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "hackathonscraper",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "hackathonscraper",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "RAG_Observation",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "ProductManager",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "ProductManager",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "Mobile_Battery_Health_DegradationPredictor",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "AgenticRag",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "TICTACTOE",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "TICTACTOE",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "rockpaperscissors",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "rockpaperscissors",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    {
+      "resume_skill": "FastAPI",
+      "github_skill": "FastAPI",
+      "confidence": {
+        "score": 100,
+        "level": "VERY_HIGH"
+      },
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "Backend",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "readme",
+          "repo": "hackathonscraper",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    {
+      "resume_skill": "Docker",
+      "github_skill": "Docker",
+      "confidence": {
+        "score": 60,
+        "level": "HIGH"
+      },
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    {
+      "resume_skill": "PostgreSQL",
+      "github_skill": "PostgreSQL",
+      "confidence": {
+        "score": 35,
+        "level": "MEDIUM"
+      },
+      "evidence": [
+        {
+          "source": "readme",
+          "repo": "ProductManager",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    {
+      "resume_skill": "Qdrant",
+      "github_skill": "Qdrant",
+      "confidence": {
+        "score": 100,
+        "level": "VERY_HIGH"
+      },
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "readme",
+          "repo": "hackathonscraper",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    {
+      "resume_skill": "Streamlit",
+      "github_skill": "streamlit",
+      "confidence": {
+        "score": 95,
+        "level": "VERY_HIGH"
+      },
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    {
+      "resume_skill": "OpenAI",
+      "github_skill": "OpenAI",
+      "confidence": {
+        "score": 95,
+        "level": "VERY_HIGH"
+      },
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    }
+  ],
+  "unmatched_skills": [
+    {
+      "resume_skill": "LangChain"
+    }
+  ],
+  "statistics": {
+    "resume_skills_count": 8,
+    "matched_count": 7,
+    "unmatched_count": 1,
+    "verification_percentage": 87.5
+  }
+}

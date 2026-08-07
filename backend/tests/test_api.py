@@ -61,8 +61,10 @@ async def test_valid_pdf_returns_200(sample_profile: ResumeProfile) -> None:
 
     assert response.status_code == 200
     body = response.json()
+    # Response is wrapped: {"resume_profile": {...}, "github_verification": {...}}
+    profile = body.get("resume_profile", body)  # fallback for direct profile if shape changes
     for key in ("projects", "technical_skills", "soft_skills", "certifications", "achievements", "hackathons", "experience"):
-        assert key in body, f"Expected key '{key}' missing from response"
+        assert key in profile, f"Expected key '{key}' missing from resume_profile"
 
 
 # --------------------------------------------------------------------------- #

@@ -26,14 +26,12 @@ logger = logging.getLogger(__name__)
 SYSTEM_PROMPT = """\
 You are a resume parser. You will receive the plain text of a resume.
 
-Your task is to extract ONLY the following technical profile fields and return \
-a single, valid JSON object. Do NOT extract or include any personal information \
-(such as name, email, phone number, college, degree, GitHub profile, \
-LinkedIn profile, or LeetCode profile).
+Your task is to extract the following fields and return a single, valid JSON object.
 
 The JSON object MUST conform exactly to this schema:
 
 {
+  "github_username": <string or null>,
   "projects": [
     {
       "name": <string or null>,
@@ -62,9 +60,11 @@ The JSON object MUST conform exactly to this schema:
 }
 
 Rules:
+- "github_username": Extract ONLY the GitHub username from the resume. If the resume contains a GitHub URL like "https://github.com/HemachandranT" or "github.com/HemachandranT/someproject", extract just the username part (e.g. "HemachandranT"). If the resume lists a GitHub username directly (e.g. "GitHub: HemachandranT"), extract that. If no GitHub information is present, use null.
 - "technical_skills" means programming languages, frameworks, tools, platforms, databases, and technologies (e.g. Python, React, Docker, PostgreSQL, AWS).
 - "soft_skills" means interpersonal and professional traits (e.g. Leadership, Communication, Teamwork, Problem Solving).
 - If a skill could be either, prefer "technical_skills".
+- "experience" means ONLY paid work experience, internships, part-time jobs, and freelance work at companies or organisations. Do NOT put colleges, universities, schools, or any educational institutions in "experience" — education is out of scope and must be completely ignored.
 - Use null (not empty string "") for any string field not present in the resume.
 - Use [] for any array field not present in the resume.
 - Do NOT invent or infer information not explicitly present in the resume.
@@ -146,6 +146,7 @@ def _split_text(text: str, max_chars: int) -> list[str]:
 def _merge_profiles(profiles: list[dict]) -> dict:
     """Merge multiple partial profile dicts into one by combining all lists."""
     merged: dict[str, Any] = {
+        "github_username": None,
         "projects": [],
         "technical_skills": [],
         "soft_skills": [],
@@ -159,6 +160,10 @@ def _merge_profiles(profiles: list[dict]) -> dict:
     seen_soft: set[str] = set()
 
     for profile in profiles:
+        # Take first non-null github_username found
+        if merged["github_username"] is None and profile.get("github_username"):
+            merged["github_username"] = profile["github_username"]
+
         for key in ("projects", "certifications", "achievements", "hackathons", "experience"):
             items = profile.get(key)
             if isinstance(items, list):

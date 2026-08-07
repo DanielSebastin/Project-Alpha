@@ -1,0 +1,195 @@
+{
+  "matched_skills": [
+    {
+      "resume_skill": "Python",
+      "github_skill": "Python",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "INFRA_OPTIMIZER",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "PR_TEST",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "PR_TEST",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "frontend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "fastapi_crash",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "rag",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    {
+      "resume_skill": "FastAPI",
+      "github_skill": "FastAPI",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "fastapi_crash",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    {
+      "resume_skill": "Docker",
+      "github_skill": "Docker",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "frontend",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    {
+      "resume_skill": "React",
+      "github_skill": "React",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "aapeet_test",
+          "detail": "package.json"
+        },
+        {
+          "source": "readme",
+          "repo": "aapeet_test",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "dependency",
+          "repo": "aapeet_frontend",
+          "detail": "package.json"
+        },
+        {
+          "source": "readme",
+          "repo": "aapeet_frontend",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    {
+      "resume_skill": "TypeScript",
+      "github_skill": "TypeScript",
+      "evidence": [
+        {
+          "source": "readme",
+          "repo": "aapeet_test",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "AWS_SBG",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "aapeet_frontend",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "frontend",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    {
+      "resume_skill": "SQLAlchemy",
+      "github_skill": "SQLAlchemy",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "fastapi_crash",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    {
+      "resume_skill": "JavaScript",
+      "github_skill": "JavaScript",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "aapeet_customer",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "INFRA_OPTIMIZER",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "aapeet_test",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "AWS_SBG",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "aapeet_frontend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "frontend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "rag",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    {
+      "resume_skill": "Tailwind CSS",
+      "github_skill": "Tailwind CSS",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "aapeet_test",
+          "detail": "package.json"
+        },
+        {
+          "source": "dependency",
+          "repo": "aapeet_frontend",
+          "detail": "package.json"
+        }
+      ]
+    }
+  ],
+  "unmatched_skills": [
+    {
+      "resume_skill": "AWS Lambda"
+    },
+    {
+      "resume_skill": "PostgreSQL"
+    }
+  ],
+  "statistics": {
+    "resume_skills_count": 10,
+    "matched_count": 8,
+    "unmatched_count": 2
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "username": "DanielSebastin",
+  "skills": {
+    "CSS": {
+      "canonical_name": "CSS",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "hackathonscraper",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "ProductManager",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "TICTACTOE",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "rockpaperscissors",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    "Docker": {
+      "canonical_name": "Docker",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    "FastAPI": {
+      "canonical_name": "FastAPI",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "Backend",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "readme",
+          "repo": "hackathonscraper",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "Flask": {
+      "canonical_name": "Flask",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "TICTACTOE",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "readme",
+          "repo": "TICTACTOE",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "dependency",
+          "repo": "rockpaperscissors",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "readme",
+          "repo": "rockpaperscissors",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    "HTML": {
+      "canonical_name": "HTML",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "hackathonscraper",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "ProductManager",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "TICTACTOE",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "rockpaperscissors",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    "JavaScript": {
+      "canonical_name": "JavaScript",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "hackathonscraper",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "ProductManager",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    "Jupyter Notebook": {
+      "canonical_name": "Jupyter Notebook",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Mobile_Battery_Health_DegradationPredictor",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    "NumPy": {
+      "canonical_name": "NumPy",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "OpenAI": {
+      "canonical_name": "OpenAI",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "PostgreSQL": {
+      "canonical_name": "PostgreSQL",
+      "evidence": [
+        {
+          "source": "readme",
+          "repo": "ProductManager",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    "PyPDF2": {
+      "canonical_name": "PyPDF2",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "Pydantic": {
+      "canonical_name": "Pydantic",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "Python": {
+      "canonical_name": "Python",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Project-Alpha",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "hackathonscraper",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "hackathonscraper",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "RAG_Observation",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "ProductManager",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "ProductManager",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "Mobile_Battery_Health_DegradationPredictor",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "AgenticRag",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "language",
+          "repo": "TICTACTOE",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "TICTACTOE",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "language",
+          "repo": "rockpaperscissors",
+          "detail": "Detected as repository language"
+        },
+        {
+          "source": "readme",
+          "repo": "rockpaperscissors",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    "Qdrant": {
+      "canonical_name": "Qdrant",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "readme",
+          "repo": "hackathonscraper",
+          "detail": "Mentioned in README"
+        },
+        {
+          "source": "readme",
+          "repo": "RAG_Observation",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    "SQLAlchemy": {
+      "canonical_name": "SQLAlchemy",
+      "evidence": [
+        {
+          "source": "readme",
+          "repo": "ProductManager",
+          "detail": "Mentioned in README"
+        }
+      ]
+    },
+    "Shell": {
+      "canonical_name": "Shell",
+      "evidence": [
+        {
+          "source": "language",
+          "repo": "Backend",
+          "detail": "Detected as repository language"
+        }
+      ]
+    },
+    "Uvicorn": {
+      "canonical_name": "Uvicorn",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "Backend",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "apscheduler": {
+      "canonical_name": "apscheduler",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "boto": {
+      "canonical_name": "boto",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "TICTACTOE",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "rockpaperscissors",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "faiss-cpu": {
+      "canonical_name": "faiss-cpu",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "httpx": {
+      "canonical_name": "httpx",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "Backend",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "playwright": {
+      "canonical_name": "playwright",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "pypdf2": {
+      "canonical_name": "pypdf2",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "python-dotenv": {
+      "canonical_name": "python-dotenv",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "requests": {
+      "canonical_name": "requests",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        }
+      ]
+    },
+    "sentence-transformers": {
+      "canonical_name": "sentence-transformers",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "streamlit": {
+      "canonical_name": "streamlit",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "requirements.txt"
+        },
+        {
+          "source": "dependency",
+          "repo": "AgenticRag",
+          "detail": "pyproject.toml"
+        }
+      ]
+    },
+    "﻿fastapi": {
+      "canonical_name": "﻿fastapi",
+      "evidence": [
+        {
+          "source": "dependency",
+          "repo": "hackathonscraper",
+          "detail": "requirements.txt"
+        }
+      ]
+    }
+  }
+}

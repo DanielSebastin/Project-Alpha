@@ -1,0 +1,1526 @@
+{
+  "username": "Janani-N14",
+  "skills": [
+    {
+      "skill": "FastAPI",
+      "score": 33,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 4,
+        "topic_count": 0,
+        "readme_count": 3,
+        "unique_repositories": 6,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "Groq",
+      "score": 33,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 4,
+        "topic_count": 0,
+        "readme_count": 4,
+        "unique_repositories": 5,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "python-dotenv",
+      "score": 32,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 5,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 5,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Pydantic",
+      "score": 31,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 4,
+        "topic_count": 0,
+        "readme_count": 2,
+        "unique_repositories": 5,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "Python",
+      "score": 30,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 7,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 4,
+        "unique_repositories": 8,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "Uvicorn",
+      "score": 26,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 4,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 4,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "streamlit",
+      "score": 26,
+      "confidence": "Very High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 4,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 4,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "LangChain",
+      "score": 21,
+      "confidence": "High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 3,
+        "unique_repositories": 4,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "aiohttp",
+      "score": 20,
+      "confidence": "High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 3,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 3,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "requests",
+      "score": 20,
+      "confidence": "High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 3,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 3,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "SQLAlchemy",
+      "score": 17,
+      "confidence": "High",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 1,
+        "unique_repositories": 2,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "NumPy",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Pandas",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "google-api-python-client",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "google-auth",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "google-auth-httplib2",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "google-auth-oauthlib",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langchain-community",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langchain-groq",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langgraph",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "loguru",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pipecat-ai",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "piper-tts",
+      "score": 14,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 2,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 2,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "ChromaDB",
+      "score": 12,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 1,
+        "unique_repositories": 2,
+        "unique_sources": 2
+      }
+    },
+    {
+      "skill": "GitPython",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Jinja2",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "MarkupSafe",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "OpenAI",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "PyTorch",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "PyYAML",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Pygments",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "aiohappyeyeballs",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "aiortc",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "aiosignal",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "altair",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "annotated-types",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "anyio",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "attrs",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "blinker",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "boto3",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "cachetools",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "certifi",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "charset-normalizer",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "click",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "dataclasses-json",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "distro",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "frozenlist",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "gitdb",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "h11",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "httpcore",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "httpx",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "httpx-sse",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "idna",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "jiter",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "joblib",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "jsonpatch",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "jsonpointer",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "jsonschema",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "jsonschema-specifications",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langchain-core",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langchain-openai",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langchain-text-splitters",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langgraph-checkpoint",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langgraph-sdk",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "langsmith",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "markdown-it-py",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "marshmallow",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "mcp",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "mdurl",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "msgpack",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "multidict",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "mypy-extensions",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "narwhals",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "ollama",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "orjson",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "packaging",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pillow",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pipecat-ai-small-webrtc-prebuilt",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "plotly",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "propcache",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "prophet",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "protobuf",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pyarrow",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pydantic-settings",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pydantic_core",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pydeck",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "python-dateutil",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "pytz",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "referencing",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "regex",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "requests-toolbelt",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "rich",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "rpds-py",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "sentence-transformers",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "six",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "smmap",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "sniffio",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "starlette",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "tenacity",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "tiktoken",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "toml",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "torchaudio",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "torchvision",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "tornado",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "tqdm",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "typing-inspect",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "typing_extensions",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "tzdata",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "urllib3",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "yarl",
+      "score": 8,
+      "confidence": "Medium",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 1,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "HTML",
+      "score": 5,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 1,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "JavaScript",
+      "score": 5,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 1,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Jupyter Notebook",
+      "score": 5,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 1,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 0,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "AWS",
+      "score": 4,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 1,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Flask",
+      "score": 4,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 1,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "MongoDB",
+      "score": 4,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 1,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    },
+    {
+      "skill": "Pinecone",
+      "score": 4,
+      "confidence": "Low",
+      "breakdown": {
+        "language_count": 0,
+        "dependency_count": 0,
+        "topic_count": 0,
+        "readme_count": 1,
+        "unique_repositories": 1,
+        "unique_sources": 1
+      }
+    }
+  ]
+}

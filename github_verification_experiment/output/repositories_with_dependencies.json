@@ -1,0 +1,144 @@
+{
+  "username": "DanielSebastin",
+  "repositories": [
+    {
+      "repo_name": "Project-Alpha",
+      "readme": null,
+      "languages": [
+        "Python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "dependencies": {}
+    },
+    {
+      "repo_name": "DyslexicHELPER",
+      "readme": "# DyslexicHELPER",
+      "languages": [],
+      "ecosystems": [],
+      "dependencies": {}
+    },
+    {
+      "repo_name": "Backend",
+      "readme": "",
+      "languages": [
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Dockerfile",
+        "Shell"
+      ],
+      "ecosystems": [
+        "python",
+        "node"
+      ],
+      "dependencies": {
+        "requirements.txt": "fastapi==0.115.12\nuvicorn[standard]==0.34.2\nhttpx==0.28.1\n",
+        "pyproject.toml": "[project]\nname = \"code-guardian-backend\"\nversion = \"0.1.0\"\ndescription = \"Add your description here\"\nreadme = \"README.md\"\nrequires-python = \">=3.13\"\ndependencies = []\n"
+      }
+    },
+    {
+      "repo_name": "hackathonscraper",
+      "readme": "﻿# HackFinder — Hackathon Discovery & Semantic Search\r\n\r\nAI-powered platform that aggregates hackathons from Knowafest and lets users discover them using natural language semantic search.\r\n\r\n---\r\n\r\n## Quick Start\r\n\r\n### 1. Install dependencies\r\n```bash\r\npip install -r requirements.txt\r\nplaywright install chromium\r\n```\r\n\r\n### 2. Set up `.env`\r\n```\r\nQDRANT_URL=<your-qdrant-cloud-url>\r\nQDRANT_API_KEY=<your-qdrant-api-key>\r\nLLM_MODEL=mistral          # optional, for Ollama\r\nOLLAMA_URL=http://localhost:11434  # optional\r\n```\r\n\r\n### 3. Scrape hackathons\r\n```bash\r\npython -m scraper.scraper\r\n```\r\n\r\n### 4. Upload embeddings to Qdrant\r\n```bash\r\npython -m database.uploader\r\n```\r\n\r\n### 5. Start the API\r\n```bash\r\nuvicorn api.main:app --reload\r\n```\r\n\r\n### 6. Open the Frontend\r\nOpen `frontend/index.html` in your browser.\r\n\r\n---\r\n\r\n## Automated Pipeline (optional)\r\n\r\nRun the scheduler to auto-refresh data every 12 hours:\r\n```bash\r\npython -m scraper.scheduler\r\n```\r\n\r\n---\r\n\r\n## LLM Integration (do this last)\r\n\r\n1. Install [Ollama](https://ollama.com/download)\r\n2. Pull a model: `ollama pull mistral`\r\n3. Restart uvicorn — the `/search` endpoint will now include an `llm_summary` in responses automatically.\r\n\r\n---\r\n\r\n## API Endpoints\r\n\r\n| Method | Endpoint | Description |\r\n|--------|----------|-------------|\r\n| `POST` | `/search` | Semantic search. Body: `{ \"text\": \"...\", \"limit\": 10 }` |\r\n| `GET`  | `/events` | Browse all events. Params: `?limit=20&skip=0` |\r\n| `GET`  | `/health` | API + Ollama status check |\r\n| `GET`  | `/docs`   | Auto-generated Swagger UI |\r\n\r\n---\r\n\r\n## Project Structure\r\n\r\n```\r\nHackathonProject/\r\n├── api/              # FastAPI backend\r\n│   ├── main.py\r\n│   ├── routes.py\r\n│   ├── search_service.py\r\n│   └── llm_service.py   # Ollama local LLM integration\r\n├── database/         # Qdrant vector DB layer\r\n│   ├── qdrant_client.py\r\n│   ├── uploader.py\r\n│   └── cleaner.py\r\n├── models/           # Embedding model\r\n│   └── embedding_model.py\r\n├── scraper/          # Data collection pipeline\r\n│   ├── scraper.py\r\n│   ├── parser.py\r\n│   └── scheduler.py\r\n├── data/             # Raw hackathon data\r\n│   └── raw_events.json\r\n├── utils/\r\n│   └── helpers.py    # Shared utilities + LLM context formatter\r\n├── frontend/\r\n│   └── index.html    # Search UI\r\n└── requirements.txt\r\n```\r\n",
+      "languages": [
+        "Python",
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "ecosystems": [
+        "python",
+        "node"
+      ],
+      "dependencies": {
+        "requirements.txt": "﻿fastapi\nuvicorn[standard]\nplaywright\nsentence-transformers\nqdrant-client\npydantic\napscheduler\npython-dotenv\nrequests"
+      }
+    },
+    {
+      "repo_name": "RAG_Observation",
+      "readme": "# 🚀 Modular RAG System (Retrieval-Augmented Generation)\r\n\r\nA fully modular, production-structured Retrieval-Augmented Generation (RAG) backend built with clean architecture principles.\r\n\r\nThis project implements document ingestion, multiple chunking strategies, embedding generation, vector indexing, similarity-based retrieval, LLM-based response generation, and retrieval benchmarking.\r\n\r\n---\r\n\r\n# 📌 Project Overview\r\n\r\nThis system supports:\r\n\r\n- 📄 PDF document ingestion\r\n- ✂️ Fixed and Semantic chunking strategies\r\n- 🧠 Embedding generation\r\n- 🗂 Persistent vector storage using Qdrant\r\n- 🔎 Top-K similarity retrieval\r\n- 📊 Retrieval benchmarking and evaluation\r\n- ✨ LLM-based response generation\r\n- ⚙️ Modular and scalable backend design\r\n\r\n---\r\n\r\n# 🏗️ Project Structure\r\n\r\nbackend/\r\n└── app/\r\n├── chunking/\r\n├── embeddings/\r\n├── indexing/\r\n├── retrieval/\r\n├── generation/\r\n├── evaluation/\r\n├── vectorstore/\r\n├── utils/\r\n├── config.py\r\n└── main.py\r\n\r\ndata/\r\n├── documents/\r\n└── queries/\r\n\r\n\r\n---\r\n\r\n# ✅ Implemented Modules\r\n\r\n## 1️⃣ Document Loader\r\n- Extracts text from PDF documents\r\n- Prepares content for chunking\r\n\r\nLocation:\r\n\r\napp/utils/loader.py\r\n\r\n\r\n---\r\n\r\n## 2️⃣ Chunking Strategies\r\n\r\n### Fixed Chunking\r\n- Splits text into equal-size chunks\r\n- Baseline method\r\n\r\n### Semantic Chunking\r\n- Context-aware chunk splitting\r\n- Improves retrieval relevance\r\n\r\nLocation:\r\n\r\napp/chunking/\r\n\r\n\r\n---\r\n\r\n## 3️⃣ Embedding Module\r\n- Converts text chunks into vector embeddings\r\n- Configurable embedding model\r\n- Query embedding support\r\n\r\nLocation:\r\n\r\napp/embeddings/embedder.py\r\n\r\n\r\n---\r\n\r\n## 4️⃣ Vector Store (Qdrant)\r\n- Persistent local storage\r\n- Cosine similarity search\r\n- Separate collections:\r\n  - rag_fixed\r\n  - rag_semantic\r\n\r\nLocation:\r\n\r\napp/vectorstore/qdrant_store.py\r\n\r\n\r\n---\r\n\r\n## 5️⃣ Indexing\r\n- Embeds chunks\r\n- Stores vectors with metadata (payload)\r\n- Handles collection creation\r\n\r\nLocation:\r\n\r\napp/indexing/indexer.py\r\n\r\n\r\n---\r\n\r\n## 6️⃣ Retrieval\r\n- Embeds query\r\n- Performs similarity search\r\n- Returns Top-K relevant chunks\r\n\r\nLocation:\r\n\r\napp/retrieval/retriever.py\r\n\r\n\r\n---\r\n\r\n## 7️⃣ Generation\r\n- Sends retrieved context to LLM\r\n- Produces final answer\r\n- Isolated generation layer\r\n\r\nLocation:\r\n\r\napp/generation/generator.py\r\n\r\n\r\n---\r\n\r\n## 8️⃣ Evaluation & Benchmarking\r\n- Measures ingestion time\r\n- Measures retrieval time\r\n- Noise testing\r\n- Chunking strategy comparison\r\n\r\nLocation:\r\n\r\napp/evaluation/\r\n\r\n\r\n---\r\n\r\n# 🧠 RAG Pipeline Flow\r\n\r\n1. Load document\r\n2. Apply chunking strategy\r\n3. Generate embeddings\r\n4. Store vectors in Qdrant\r\n5. Accept user query\r\n6. Embed query\r\n7. Retrieve Top-K similar chunks\r\n8. Send context to LLM\r\n9. Generate final response\r\n\r\n---\r\n\r\n# ⚙️ Tech Stack\r\n\r\n- Python 3.13\r\n- FastAPI\r\n- Qdrant (Local Vector DB)\r\n- Uvicorn\r\n- dotenv\r\n- Configurable Embedding Model\r\n- LLM API integration\r\n\r\n---\r\n\r\n# 🔐 Environment Setup\r\n\r\nCreate a `.env` file inside `backend/`:\r\n\r\n\r\nAPI_KEY=your_api_key_here\r\n\r\n\r\n---\r\n\r\n# 📦 Installation\r\n\r\nClone the repository:\r\n\r\n\r\ngit clone <your-repo-url>\r\ncd backend\r\n\r\n\r\nInstall dependencies:\r\n\r\n\r\npip install -r requirements.txt\r\n\r\n\r\n---\r\n\r\n# ▶️ Running the Server\r\n\r\nFrom inside `backend/`:\r\n\r\n\r\nuvicorn app.main:app --reload\r\n\r\n\r\nServer runs at:\r\n\r\n\r\nhttp://127.0.0.1:8000\r\n\r\n\r\n---\r\n\r\n# 📊 Running Benchmark\r\n\r\nFrom inside `backend/`:\r\n\r\n\r\npython -m app.evaluation.benchmark\r\n\r\n\r\nThis evaluates:\r\n- Fixed vs Semantic chunking\r\n- Retrieval speed\r\n- Context quality impact\r\n\r\n---\r\n\r\n# 🛑 Ignored Files\r\n\r\nThe following are excluded via `.gitignore`:\r\n\r\n- .env\r\n- __pycache__/\r\n- Qdrant storage files\r\n- SQLite databases\r\n- Lock files\r\n- Virtual environments\r\n\r\n---\r\n\r\n# 🎯 Design Principles\r\n\r\n- Modular architecture\r\n- Separation of concerns\r\n- Replaceable components\r\n- Benchmark-driven development\r\n- Production-ready structure\r\n- Persistent vector storage\r\n\r\n---\r\n\r\n# 📌 Current Status\r\n\r\n- ✅ Core RAG pipeline complete\r\n- ✅ Fixed & Semantic chunking implemented\r\n- ✅ Embedding & retrieval working\r\n- ✅ Benchmarking module implemented\r\n- ⬜ Dockerization pending\r\n- ⬜ Cloud deployment pending\r\n- ⬜ CI/CD integration pending\r\n\r\n---\r\n\r\n# 🚀 Future Enhancements\r\n\r\n- Docker containerization\r\n- AWS EC2 deployment\r\n- Hybrid search (BM25 + Vector)\r\n- UI dashboard\r\n- Authentication layer\r\n- Distributed Qdrant setup\r\n\r\n---\r\n\r\n# 👨‍💻 Purpose\r\n\r\nThis project demonstrates a structured, benchmark-oriented RAG implementation suitable for real backend systems rather than tutorial-level prototypes.\r\n\r\n---\r\n",
+      "languages": [
+        "Python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "dependencies": {}
+    },
+    {
+      "repo_name": "ProductManager",
+      "readme": "# 📦 Product Manager\r\n\r\nA simple and efficient **Product Management System** to create, manage, and organize products.\r\nBuilt using **Python, SQLAlchemy, and AWS RDS (PostgreSQL)**.\r\n\r\n---\r\n\r\n## 🚀 Features\r\n\r\n* Add new products\r\n* View all products\r\n* Update product details\r\n* Delete products\r\n* Cloud database with AWS RDS (PostgreSQL)\r\n* Fast ORM using SQLAlchemy\r\n* Secure SSL database connection\r\n\r\n---\r\n\r\n## 🛠️ Tech Stack\r\n\r\n**Backend**\r\n\r\n* Python\r\n* SQLAlchemy\r\n\r\n**Database**\r\n\r\n* AWS RDS (PostgreSQL)\r\n\r\n---\r\n\r\n## 🗄️ Database Configuration\r\n\r\n```python\r\nfrom sqlalchemy import create_engine\r\nfrom sqlalchemy.orm import sessionmaker\r\n\r\ndb_url = \"postgresql://username:password@rdsproj.cnwcewm0mb3c.ap-south-1.rds.amazonaws.com:5432/postgres?sslmode=require\"\r\n\r\nengine = create_engine(db_url, pool_pre_ping=True)\r\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\r\n```\r\n\r\nNever expose real database credentials in public repositories. Use environment variables instead.\r\n\r\n---\r\n\r\n## ⚙️ Installation & Setup\r\n\r\n### Clone the repository\r\n\r\n```bash\r\ngit clone https://github.com/DanielSebastin/ProductManager.git\r\ncd ProductManager\r\n```\r\n\r\n### Create virtual environment\r\n\r\n```bash\r\npython -m venv venv\r\n```\r\n\r\n**Activate (Windows)**\r\n\r\n```bash\r\nvenv\\Scripts\\activate\r\n```\r\n\r\n**Activate (Linux / Mac)**\r\n\r\n```bash\r\nsource venv/bin/activate\r\n```\r\n\r\n### Install dependencies\r\n\r\n```bash\r\npip install -r requirements.txt\r\n```\r\n\r\n### Configure Environment Variables\r\n\r\nCreate a `.env` file:\r\n\r\n```env\r\nDB_USER=your_username\r\nDB_PASS=your_password\r\nDB_HOST=rdsproj.cnwcewm0mb3c.ap-south-1.rds.amazonaws.com\r\nDB_PORT=5432\r\nDB_NAME=postgres\r\n```\r\n\r\n### Run the project\r\n\r\n```bash\r\npython app.py\r\n```\r\n\r\n---\r\n\r\n## 📂 Project Structure\r\n\r\n```text\r\nProductManager/\r\n│── backend/\r\n│   ├── database.py\r\n│   ├── models.py\r\n│   ├── crud.py\r\n│   └── app.py\r\n│\r\n│── frontend/ (optional)\r\n│── requirements.txt\r\n│── README.md\r\n```\r\n\r\n---\r\n\r\n## 🔐 Security Notes\r\n\r\n* SSL enabled (`sslmode=require`)\r\n* Do NOT commit `.env`\r\n* Restrict RDS Security Group to trusted IPs\r\n* Rotate DB credentials regularly\r\n\r\n---\r\n\r\n## 🎯 Purpose\r\n\r\n* Learn AWS RDS (Cloud DB)\r\n* Practice SQLAlchemy ORM\r\n* Build real-world CRUD system\r\n\r\n---\r\n\r\n## 📜 License\r\n\r\nMIT License\r\n",
+      "languages": [
+        "JavaScript",
+        "CSS",
+        "Python",
+        "HTML"
+      ],
+      "ecosystems": [
+        "node",
+        "python"
+      ],
+      "dependencies": {
+        "pyproject.toml": "[project]\nname = \"fastapi\"\nversion = \"0.1.0\"\ndescription = \"Add your description here\"\nreadme = \"README.md\"\nrequires-python = \">=3.13\"\ndependencies = []\n"
+      }
+    },
+    {
+      "repo_name": "Mobile_Battery_Health_DegradationPredictor",
+      "readme": null,
+      "languages": [
+        "Jupyter Notebook",
+        "Python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "dependencies": {}
+    },
+    {
+      "repo_name": "AgenticRag",
+      "readme": "",
+      "languages": [
+        "Python"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "dependencies": {
+        "requirements.txt": "fastapi\nuvicorn\npython-dotenv\nsentence-transformers\nfaiss-cpu\nnumpy\nPyPDF2\nopenai\nstreamlit\n",
+        "pyproject.toml": "[project]\nname = \"roadmap-rag\"\nversion = \"0.1.0\"\ndescription = \"Add your description here\"\nreadme = \"README.md\"\nrequires-python = \">=3.13\"\ndependencies = [\n    \"faiss-cpu>=1.13.2\",\n    \"fastapi>=0.128.0\",\n    \"numpy>=2.4.1\",\n    \"openai>=2.15.0\",\n    \"pypdf2>=3.0.1\",\n    \"python-dotenv>=1.2.1\",\n    \"sentence-transformers>=5.2.0\",\n    \"streamlit>=1.53.0\",\n    \"uvicorn>=0.40.0\",\n]\n"
+      }
+    },
+    {
+      "repo_name": "TICTACTOE",
+      "readme": "In this project we are working to develop a simple Tic-Tac-Toe game application using AWS services. The main components of this project include:\n\n1. **AWS EC2 Instance**: This is where the application will run. We're using an Amazon Linux 2 EC2 instance to host the application.\n2. **AWS DynamoDB**: This is used as the backend database to store game state and user data. DynamoDB is a NoSQL database service provided by AWS, which is fully managed and designed for high-performance applications.\n3. **Python Application**: The application is written in Python, using Flask for the web framework and Boto for interacting with DynamoDB.\n4. **IAM Role**: IAM role for secure connection between ec2 to dynamoDB.\n\n### Project Structure and Components\n\n1. **EC2 Instance Setup**:\n   - **Amazon Linux 2**: An Amazon Linux 2 EC2 instance is set up to host the application.\n   - **Application Deployment**: The Tic-Tac-Toe application is deployed on this instance.\n\n2. **DynamoDB for Backend Storage**:\n   - **Games Table**: A DynamoDB table named `Games` is created to store the state of each game, including information about the players, game status, and board state.\n   - **Connection Manager**: A `ConnectionManager` class is used to manage connections to DynamoDB, including setting up the connection and handling queries and updates to the table.\n\n3. **Python Application Components**:\n   - **Flask Framework**: Used to handle web requests and render the game interface.\n   - **GameController Class**: Manages the game logic, including creating new games, accepting or rejecting game invites, updating the game board, and determining the game result.\n\n### Key Features and Workflow\n\n1. **Create New Game**:\n   - A new game can be created by specifying the game ID, creator, and invitee.\n   - The game state is initialized and stored in the DynamoDB `Games` table.\n\n2. **Accept/Reject Game Invite**:\n   - Players can accept or reject game invites. The game status is updated accordingly in DynamoDB.\n\n3. **Update Game Board**:\n   - Players take turns to make moves by updating the board state. Each move is validated and recorded in DynamoDB.\n   - The `updateBoardAndTurn` method is used to update the board and switch turns between players.\n\n4. **Check Game Result**:\n   - After each move, the game state is checked to determine if there's a win, loss, tie, or if the game is still in progress.\n   - The `checkForGameResult` method checks various win conditions and updates the game status in DynamoDB accordingly.\n\n5. **Game State Management**:\n   - The game state, including player moves and game status, is stored and managed in DynamoDB.\n   - The `GameController` class handles all interactions with DynamoDB to ensure the game state is consistently updated and retrieved.\n\n\n# Installation Steps\n\n### Install Development Tools and Dependencies\n\nInstalls essential development tools and libraries needed for compiling and building software.\n\n\n```bash\nsudo yum groupinstall -y \"Development Tools\"\n```\n\nInstalls development headers and libraries for OpenSSL, bzip2, and libffi, required for Python.\n\n\n```bash\nsudo yum install -y openssl-devel bzip2-devel libffi-devel\n```\n\n\n### Install Python 2.7.18\n\nDownloads Python 2.7.18, extracts it, configures the build with optimizations enabled, and installs it without replacing the system-provided Python.\n\n\n```bash\ncd /usr/src\nsudo wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz\nsudo tar xzf Python-2.7.18.tgz\ncd Python-2.7.18\nsudo ./configure --enable-optimizations\nsudo make altinstall\n```\n\nVerifies the installed Python version.\n\n\n```bash\npython2.7 -V\n```\n\n### Install pip for Python 2.7\n\nDownloads and installs pip for Python 2.7.\n\n\n```bash\nwget https://bootstrap.pypa.io/pip/2.7/get-pip.py\npython get-pip.py\n```\n\n### Install Python Packages\n\nInstalls Flask, Boto (for AWS SDK), and configparser Python packages using pip.\n\n\n```bash\npip install Flask\npip install boto\npip install configparser\n```\n\n### Install Git\n\nInstalls Git, a version control system.\n\n```bash\nyum install git -y\n```\n\n### Clone the TicTacToe Project Repository\n\nClones the TicTacToe project repository from GitHub into the `/home/ec2-user/` directory.\n\n```bash\ncd /home/ec2-user/\ngit clone https://github.com/DanielSebastin/TICTACTOE.git\n```\n\nCreate a file inside the code location provide file name as \"config.ini\" and add below entry. make sure to change the region accordingly.\n\n[Settings]\nTableName = Games\nRegion = ap-south-2\n\nAlso, edit the config file and edit the config file and set region and endpoint based on your resources. Example mentioned below\n\n[dynamodb]\nregion=ap-south-2\nendpoint=dynamodb.ap-south-2.amazonaws.com\n\nAlso, Dont forget to attach an IAM role, that has valid access to create a DynamoDB table. Also, While launching EC2 instance, Enable \"metadata\" to \"V1 and v2\" instead of only V2, as we are using metadata URL to obtain the temp credentials.\n\nOnce all content is ready, Navigate to the project location and run below command. \n#make sure to open required port (5000) in ec2 security group\n\n```bash\npython application.py --config config.ini --mode service --endpoint dynamodb.ap-south-2.amazonaws.com --serverPort 5000\n```\n\n\nUSE THIS COMMAND IN YOUR EC2 LINUX TERMINAL INORDER TO HOST YOUR FLASK APPLICATION:\npython2.7 application.py --config config.ini --mode service --endpoint dynamodb.ap-south-2.amazonaws.com --serverPort 5000\n\nThen Open browser and enter **http://instance-public-ip:5000/** and enter to access the application.\n",
+      "languages": [
+        "Python",
+        "HTML",
+        "CSS"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "dependencies": {
+        "requirements.txt": "Flask==0.10\nboto==2.39.0\n"
+      }
+    },
+    {
+      "repo_name": "rockpaperscissors",
+      "readme": "In this project we are working to develop a simple Tic-Tac-Toe game application using AWS services. The main components of this project include:\n\n1. **AWS EC2 Instance**: This is where the application will run. We're using an Amazon Linux 2 EC2 instance to host the application.\n2. **AWS DynamoDB**: This is used as the backend database to store game state and user data. DynamoDB is a NoSQL database service provided by AWS, which is fully managed and designed for high-performance applications.\n3. **Python Application**: The application is written in Python, using Flask for the web framework and Boto for interacting with DynamoDB.\n4. **IAM Role**: IAM role for secure connection between ec2 to dynamoDB.\n\n### Project Structure and Components\n\n1. **EC2 Instance Setup**:\n   - **Amazon Linux 2**: An Amazon Linux 2 EC2 instance is set up to host the application.\n   - **Application Deployment**: The Tic-Tac-Toe application is deployed on this instance.\n\n2. **DynamoDB for Backend Storage**:\n   - **Games Table**: A DynamoDB table named `Games` is created to store the state of each game, including information about the players, game status, and board state.\n   - **Connection Manager**: A `ConnectionManager` class is used to manage connections to DynamoDB, including setting up the connection and handling queries and updates to the table.\n\n3. **Python Application Components**:\n   - **Flask Framework**: Used to handle web requests and render the game interface.\n   - **GameController Class**: Manages the game logic, including creating new games, accepting or rejecting game invites, updating the game board, and determining the game result.\n\n### Key Features and Workflow\n\n1. **Create New Game**:\n   - A new game can be created by specifying the game ID, creator, and invitee.\n   - The game state is initialized and stored in the DynamoDB `Games` table.\n\n2. **Accept/Reject Game Invite**:\n   - Players can accept or reject game invites. The game status is updated accordingly in DynamoDB.\n\n3. **Update Game Board**:\n   - Players take turns to make moves by updating the board state. Each move is validated and recorded in DynamoDB.\n   - The `updateBoardAndTurn` method is used to update the board and switch turns between players.\n\n4. **Check Game Result**:\n   - After each move, the game state is checked to determine if there's a win, loss, tie, or if the game is still in progress.\n   - The `checkForGameResult` method checks various win conditions and updates the game status in DynamoDB accordingly.\n\n5. **Game State Management**:\n   - The game state, including player moves and game status, is stored and managed in DynamoDB.\n   - The `GameController` class handles all interactions with DynamoDB to ensure the game state is consistently updated and retrieved.\n\n\n# Installation Steps\n\n### Install Development Tools and Dependencies\n\nInstalls essential development tools and libraries needed for compiling and building software.\n\n\n```bash\nsudo yum groupinstall -y \"Development Tools\"\n```\n\nInstalls development headers and libraries for OpenSSL, bzip2, and libffi, required for Python.\n\n\n```bash\nsudo yum install -y openssl-devel bzip2-devel libffi-devel\n```\n\n\n### Install Python 2.7.18\n\nDownloads Python 2.7.18, extracts it, configures the build with optimizations enabled, and installs it without replacing the system-provided Python.\n\n\n```bash\ncd /usr/src\nsudo wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz\nsudo tar xzf Python-2.7.18.tgz\ncd Python-2.7.18\nsudo ./configure --enable-optimizations\nsudo make altinstall\n```\n\nVerifies the installed Python version.\n\n\n```bash\npython2.7 -V\n```\n\n### Install pip for Python 2.7\n\nDownloads and installs pip for Python 2.7.\n\n\n```bash\nwget https://bootstrap.pypa.io/pip/2.7/get-pip.py\npython get-pip.py\n```\n\n### Install Python Packages\n\nInstalls Flask, Boto (for AWS SDK), and configparser Python packages using pip.\n\n\n```bash\npip install Flask\npip install boto\npip install configparser\n```\n\n### Install Git\n\nInstalls Git, a version control system.\n\n```bash\nyum install git -y\n```\n\n### Clone the TicTacToe Project Repository\n\nClones the TicTacToe project repository from GitHub into the `/home/ec2-user/` directory.\n\n```bash\ncd /home/ec2-user/\ngit clone https://github.com/avizway1/tictactoe-with-DynamoDB.git\n```\n\nCreate a file inside the code location provide file name as \"config.ini\" and add below entry. make sure to change the region accordingly.\n\n[Settings]\nTableName = Games\nRegion = ap-south-2\n\nAlso, edit the config file and edit the config file and set region and endpoint based on your resources. Example mentioned below\n\n[dynamodb]\nregion=ap-south-2\nendpoint=dynamodb.ap-south-2.amazonaws.com\n\nAlso, Dont forget to attach an IAM role, that has valid access to create a DynamoDB table. Also, While launching EC2 instance, Enable \"metadata\" to \"V1 and v2\" instead of only V2, as we are using metadata URL to obtain the temp credentials.\n\nOnce all content is ready, Navigate to the project location and run below command. \n#make sure to open required port (5000) in ec2 security group\n\n```bash\npython application.py --config config.ini --mode service --endpoint dynamodb.ap-south-2.amazonaws.com --serverPort 5000\n```\n\nThen Open browser and enter **http://instance-public-ip:5000/** and enter to access the application.\n",
+      "languages": [
+        "Python",
+        "HTML",
+        "CSS"
+      ],
+      "ecosystems": [
+        "python"
+      ],
+      "dependencies": {
+        "requirements.txt": "Flask==0.10\nboto==2.39.0\n"
+      }
+    }
+  ]
+}

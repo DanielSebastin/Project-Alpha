@@ -32,6 +32,7 @@ class ExperienceObject(BaseModel):
 class ResumeProfile(BaseModel):
     model_config = {"populate_by_name": True}
 
+    github_username: Optional[str] = None
     projects: list[ProjectObject] = Field(default_factory=list)
     technical_skills: list[str] = Field(default_factory=list)
     soft_skills: list[str] = Field(default_factory=list)

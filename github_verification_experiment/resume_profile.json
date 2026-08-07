@@ -1,0 +1,20 @@
+{
+  "technical_skills": ["Python", "FastAPI", "Docker", "PostgreSQL", "LangChain", "Qdrant", "Streamlit"],
+  "soft_skills": ["Problem Solving", "Teamwork"],
+  "projects": [
+    {
+      "name": "HackTrack API",
+      "description": "FastAPI backend with PostgreSQL",
+      "technologies": ["FastAPI", "Python", "PostgreSQL", "Docker"]
+    },
+    {
+      "name": "RAG Pipeline",
+      "description": "Retrieval augmented generation system",
+      "technologies": ["LangChain", "Qdrant", "OpenAI", "Python"]
+    }
+  ],
+  "experience": [],
+  "certifications": [],
+  "hackathons": [],
+  "achievements": []
+}
