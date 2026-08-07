@@ -1,0 +1,27 @@
+[project]
+name = "resume-parser-pipeline"
+version = "0.1.0"
+description = "Resume Intelligence Engine — PDF to structured JSON via LLM"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.141.1",
+    "uvicorn==0.34.3",
+    "pymupdf==1.28.2",
+    "httpx==0.28.1",
+    "pydantic==2.10.4",
+    "pydantic-settings==2.7.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "pytest-asyncio==1.4.0",
+    "hypothesis==6.165.2",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.hypothesis]
+suppress_health_check = ["too_slow"]
