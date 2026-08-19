@@ -8,17 +8,12 @@ import ProfilePage from './pages/ProfilePage';
 import ProfileForm from './pages/ProfileForm';
 import SkillAssessment from './pages/SkillAssessment';
 import ResumeVerification from './pages/ResumeVerification';
-import TeamAssessment from './pages/TeamAssessment';
 import HackathonDetailsPage from './pages/HackathonDetailsPage';
 import BlueprintFormationWizard from './pages/BlueprintFormationWizard';
 import BlueprintBrowsePage from './pages/BlueprintBrowsePage';
 import BlueprintRecommendationsPage from './pages/BlueprintRecommendationsPage';
 import BlueprintInvitationsPage from './pages/BlueprintInvitationsPage';
 import BlueprintDashboardPage from './pages/BlueprintDashboardPage';
-import TeamGoalPage from './pages/TeamGoalPage';
-import TeamHubPage from './pages/TeamHubPage';
-import TeamBrowsePage from './pages/TeamBrowsePage';
-import TeamCreatePage from './pages/TeamCreatePage';
 import OnboardingProfile from './pages/onboarding/OnboardingProfile';
 import OnboardingSkills from './pages/onboarding/OnboardingSkills';
 import BrandLogo from './components/BrandLogo';
@@ -29,10 +24,6 @@ import type { Theme } from './utils/theme';
 import { LogOut, User, Sun, Moon } from 'lucide-react';
 
 // ── Helpers ────────────────────────────────────────────────────
-// Legacy team persistence was stored in localStorage and is now managed by
-// backend APIs. Purge any leftover data so it can't resurface.
-localStorage.removeItem('hackcomp_teams');
-
 const isLoggedIn = () => !!localStorage.getItem('access_token');
 const onboardingDone = () => localStorage.getItem('onboarding_step') === 'complete';
 
@@ -206,19 +197,12 @@ function App() {
           <Route path="/profile/edit" element={<AppGuard><ProfileForm /></AppGuard>} />
           <Route path="/verification" element={<AppGuard><ResumeVerification /></AppGuard>} />
           <Route path="/assessment" element={<AppGuard><SkillAssessment /></AppGuard>} />
-          <Route path="/test" element={<AppGuard><TeamAssessment /></AppGuard>} />
           <Route path="/hackathons/:id" element={<AppGuard><HackathonDetailsPage /></AppGuard>} />
           <Route path="/hackathons/:id/team/create" element={<AppGuard><BlueprintFormationWizard /></AppGuard>} />
           <Route path="/blueprints/:id/dashboard" element={<AppGuard><BlueprintDashboardPage /></AppGuard>} />
           <Route path="/blueprints/:id/recommendations" element={<AppGuard><BlueprintRecommendationsPage /></AppGuard>} />
           <Route path="/blueprints/my-invitations" element={<AppGuard><BlueprintInvitationsPage /></AppGuard>} />
           <Route path="/blueprints/browse" element={<AppGuard><BlueprintBrowsePage /></AppGuard>} />
-
-          {/* ── Legacy / parallel team flow ── */}
-          <Route path="/teams/goal" element={<AppGuard><TeamGoalPage /></AppGuard>} />
-          <Route path="/teams" element={<AppGuard><TeamHubPage /></AppGuard>} />
-          <Route path="/teams/browse" element={<AppGuard><TeamBrowsePage /></AppGuard>} />
-          <Route path="/hackathons/:id/teams/create" element={<AppGuard><TeamCreatePage /></AppGuard>} />
         </Routes>
       </div>
     </Router>

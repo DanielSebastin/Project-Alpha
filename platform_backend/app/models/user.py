@@ -40,27 +40,6 @@ class User(Base):
         back_populates="user",
         cascade="all, delete-orphan",
     )
-    owned_teams = relationship(
-        "Team", back_populates="owner", foreign_keys="Team.owner_id"
-    )
-    team_memberships = relationship(
-        "TeamMember", back_populates="user", cascade="all, delete-orphan"
-    )
-    sent_invitations = relationship(
-        "TeamInvitation",
-        back_populates="sender",
-        foreign_keys="TeamInvitation.sender_id",
-        cascade="all, delete-orphan",
-    )
-    received_invitations = relationship(
-        "TeamInvitation",
-        back_populates="receiver",
-        foreign_keys="TeamInvitation.receiver_id",
-        cascade="all, delete-orphan",
-    )
-    join_requests = relationship(
-        "TeamJoinRequest", back_populates="user", cascade="all, delete-orphan"
-    )
     owned_blueprints = relationship(
         "Blueprint", back_populates="owner", cascade="all, delete-orphan"
     )

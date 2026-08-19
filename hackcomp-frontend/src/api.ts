@@ -105,34 +105,4 @@ export const api = {
   lockBlueprint: (blueprintId: string) =>
     apiClient.post(`/blueprints/${blueprintId}/lock`),
 
-  // Teams
-  createTeam: (data: { name: string; description?: string | null; domains: string[]; max_members: number }) =>
-    apiClient.post('/teams', data),
-  getTeams: (params?: Record<string, unknown>) => apiClient.get('/teams', { params }),
-  getMyTeam: () => apiClient.get('/teams/my-team'),
-  getTeam: (teamId: string) => apiClient.get(`/teams/${teamId}`),
-  inviteMember: (teamId: string, data: { receiver_id: string }) =>
-    apiClient.post(`/teams/${teamId}/invite`, data),
-  createJoinRequest: (teamId: string) => apiClient.post(`/teams/${teamId}/join-request`),
-  getTeamJoinRequests: (teamId: string) => apiClient.get(`/teams/${teamId}/join-requests`),
-
-  // Join requests (mine)
-  getMyJoinRequests: () => apiClient.get('/my-join-requests'),
-
-  // Join request management (team owner)
-  acceptJoinRequest: (joinRequestId: string) =>
-    apiClient.post(`/join-requests/${joinRequestId}/accept`),
-  rejectJoinRequest: (joinRequestId: string) =>
-    apiClient.post(`/join-requests/${joinRequestId}/reject`),
-
-  // Invitations (received by me)
-  getMyInvitations: () => apiClient.get('/my-invitations'),
-  acceptInvitation: (invitationId: string) =>
-    apiClient.post(`/invitations/${invitationId}/accept`),
-  rejectInvitation: (invitationId: string) =>
-    apiClient.post(`/invitations/${invitationId}/reject`),
-
-  // Member discovery
-  getMemberRecommendations: (params?: { team_id?: string; limit?: number }) =>
-    apiClient.get('/recommendations/members', { params }),
 };

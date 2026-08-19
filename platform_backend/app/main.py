@@ -12,11 +12,6 @@ from app.api.routes import (
     collaboration,
     personality,
     candidates,
-    teams,
-    invitations,
-    join_requests,
-    recommendations,
-    my_requests,
     blueprints,
 )
 
@@ -50,12 +45,7 @@ app.include_router(assessment.router,    prefix="/api/v1")
 app.include_router(collaboration.router, prefix="/api/v1")
 app.include_router(personality.router,   prefix="/api/v1")
 app.include_router(candidates.router,    prefix="/api/v1")
-app.include_router(teams.router,         prefix="/api/v1")
-app.include_router(invitations.router,   prefix="/api/v1")
-app.include_router(join_requests.router, prefix="/api/v1")
-app.include_router(recommendations.router, prefix="/api/v1")
-app.include_router(my_requests.router, prefix="/api/v1")
-app.include_router(blueprints.router, prefix="/api/v1")
+app.include_router(blueprints.router,    prefix="/api/v1")
 
 # ── Health check ──────────────────────────────────────────────
 @app.get("/health", tags=["Health"])
