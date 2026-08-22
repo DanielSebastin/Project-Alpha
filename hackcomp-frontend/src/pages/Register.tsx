@@ -33,7 +33,15 @@ const Register = () => {
         navigate('/onboarding/profile');
       }
     } catch (err: any) {
-      setError(err.response?.data?.detail || 'Registration failed. Please try again.');
+      let errorMsg = 'Registration failed. Please try again.';
+      if (err.response?.data?.detail) {
+        if (Array.isArray(err.response.data.detail)) {
+          errorMsg = err.response.data.detail.map((e: any) => e.msg).join(', ');
+        } else {
+          errorMsg = err.response.data.detail;
+        }
+      }
+      setError(errorMsg);
     } finally {
       setLoading(false);
     }

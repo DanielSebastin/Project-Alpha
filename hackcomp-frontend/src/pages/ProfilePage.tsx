@@ -305,7 +305,7 @@ const ProfilePage = () => {
             <Link to="/assessment" className="btn btn-secondary btn-sm">
               <Brain size={13} /> Take Skill Assessment
             </Link>
-            <Link to="/test" className="btn btn-secondary btn-sm">
+            <Link to="/assessment" className="btn btn-secondary btn-sm">
               <Sparkles size={13} /> Take this test
             </Link>
           </div>

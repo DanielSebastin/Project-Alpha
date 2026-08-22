@@ -8,7 +8,6 @@ from app.db.session import SessionLocal
 from app.models.user import User
 from app.models.personality import Personality
 from app.models.collaboration import CollaborationAssessment, CollaborationAnswer
-from app.models.team_recommendation import TeamRecommendation
 
 client = TestClient(app)
 
@@ -87,29 +86,6 @@ try:
     assert v["completed"] is False and v["verification_percentage"] == 0, v
     print("verification-status OK")
 
-    # ── AI recommendation report ──────────────────────────────
-    r = client.post("/api/v1/collaboration/recommendations", headers=headers)
-    if r.status_code == 502:
-        # Groq unreachable in this environment — report can't be generated,
-        # but the guard/validation path already proved correct above.
-        print("recommendations POST -> 502 (Groq unreachable, skipped)")
-        r = client.get("/api/v1/collaboration/recommendations", headers=headers)
-        assert r.status_code == 404, r.text
-        print("recommendations GET -> 404 (expected, none stored)")
-    else:
-        assert r.status_code == 200, r.text
-        rec = r.json()
-        content = rec["content"]
-        for key in ("summary", "strengths", "improvements", "ideal_roles", "tips"):
-            assert key in content, (key, content)
-        assert isinstance(content["strengths"], list) and len(content["strengths"]) >= 3, content
-        print("recommendations POST OK")
-
-        r = client.get("/api/v1/collaboration/recommendations", headers=headers)
-        assert r.status_code == 200, r.text
-        assert r.json()["content"] == content
-        print("recommendations GET OK (matches stored report)")
-
     print("ALL ASSESSMENT E2E TESTS PASSED")
 finally:
     db = SessionLocal()
@@ -117,13 +93,12 @@ finally:
         user = db.query(User).filter(User.email == email).first()
         profile_id = user.profile.id if user and user.profile else None
         if user:
-            db.delete(user)  # cascades -> profile, personality, collab sessions/answers, recommendation
+            db.delete(user)  # cascades -> profile, personality, collab sessions/answers
             db.commit()
         if profile_id:
             assert db.query(Personality).filter(Personality.profile_id == profile_id).first() is None
             assert db.query(CollaborationAssessment).filter(CollaborationAssessment.profile_id == profile_id).first() is None
         assert db.query(CollaborationAnswer).filter(CollaborationAnswer.assessment_id == assessment_id).first() is None
-        assert db.query(TeamRecommendation).filter(TeamRecommendation.user_id == user.id).first() is None
         print("cleanup verified (cascade removed all assessment rows)")
     finally:
         db.close()

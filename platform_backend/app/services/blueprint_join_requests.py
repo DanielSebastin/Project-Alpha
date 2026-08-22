@@ -15,7 +15,7 @@ from app.models.blueprint import (
     SlotStatus,
 )
 from app.models.user import User
-from app.models.team import TeamMember, Team, TeamStatus
+
 
 class BlueprintJoinError(Exception):
     pass
@@ -48,18 +48,7 @@ def create_join_request(db: Session, blueprint_id: uuid.UUID, requester: User) -
     if duplicate:
         raise BlueprintJoinError("You already have a pending join request for this blueprint")
         
-    # Exclude users already in an active team (legacy fallback)
-    active_in_team = (
-        db.query(TeamMember)
-        .join(Team, Team.id == TeamMember.team_id)
-        .filter(
-            TeamMember.user_id == requester.id,
-            Team.status.in_([TeamStatus.OPEN, TeamStatus.FULL]),
-        )
-        .first()
-    )
-    if active_in_team:
-        raise BlueprintJoinError("You are already in another active team")
+
         
     req = BlueprintJoinRequest(
         blueprint_id=blueprint_id,

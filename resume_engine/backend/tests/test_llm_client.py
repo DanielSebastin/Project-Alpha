@@ -70,7 +70,7 @@ async def test_2xx_json_response_returns_correct_dict(mock_async_client_class, m
         "skills": ["Python", "JavaScript"],
         "certifications": ["AWS Certified"],
         "achievements": ["Won hackathon"],
-        "hackathons": [{"name": "HackComp 2024", "role": "Participant"}],
+        "hackathons": [{"name": "Hack It Up 2024", "role": "Participant"}],
         "experience": [{"company": "Tech Corp", "role": "Engineer", "duration": "2 years", "description": "Built APIs"}]
     }
     

@@ -15,7 +15,7 @@ from app.models.blueprint import (
     BlueprintInvitationStatus,
     BlueprintStatus,
 )
-from app.models.team import TeamMember, Team, TeamStatus
+
 from app.models.user import User
 from app.schemas.blueprint import SlotRecommendation, BlueprintRecommendationsResponse
 from app.services.recommendations import (
@@ -58,16 +58,7 @@ def recommend_for_blueprint(
     # 1. Members of this blueprint
     blueprint_member_ids = {m.user_id for m in blueprint.members}
 
-    # 2. Members of any FULL legacy team
-    full_legacy_team_user_ids = set(
-        db.execute(
-            select(TeamMember.user_id)
-            .join(Team, Team.id == TeamMember.team_id)
-            .filter(Team.status == TeamStatus.FULL)
-        )
-        .scalars()
-        .all()
-    )
+
 
     # 3. Members of any FULL blueprint (the new system) — exclude people already
     #    committed to another complete blueprint team.
@@ -99,7 +90,6 @@ def recommend_for_blueprint(
 
     excluded_ids = (
         blueprint_member_ids
-        | full_legacy_team_user_ids
         | full_blueprint_user_ids
         | pending_receiver_ids
     )

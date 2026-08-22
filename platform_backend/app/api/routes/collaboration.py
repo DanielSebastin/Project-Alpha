@@ -30,7 +30,6 @@ from app.db.session import get_db
 from app.models.user import User
 from app.models.profile import Profile
 from app.models.personality import Personality
-from app.models.team_recommendation import TeamRecommendation
 from app.models.collaboration import (
     CollaborationAnswer,
     CollaborationAssessment,
@@ -48,8 +47,6 @@ from app.schemas.collaboration import (
     CollaborationSubmitIn,
     DimensionScore,
 )
-from app.schemas.team_recommendation import TeamRecommendationOut
-from app.services.team_recommendations import generate_report
 from app.services.candidate_profile import update_teamwork_from_collaboration
 
 logger = logging.getLogger(__name__)
@@ -405,123 +402,6 @@ def get_status(
         "completed_at": latest.completed_at.isoformat() if latest else None,
     }
 
-
-# ── POST /collaboration/recommendations ────────────────────────────────────
-
-@router.post(
-    "/recommendations",
-    response_model=TeamRecommendationOut,
-    summary="Generate an AI-powered team recommendation report",
-)
-def generate_recommendations(
-    db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-) -> TeamRecommendationOut:
-    """
-    Generate (and persist) a personalized AI report that helps the user improve
-    how well they are recommended to teams. Requires both assessment sections
-    (personal style + team collaboration) to be completed.
-    """
-    profile = _get_profile_or_404(current_user.id, db)
-
-    personality = db.query(Personality).filter(Personality.profile_id == profile.id).first()
-    if not personality or not personality.completed_at:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Complete Section 1 (Personal Style) before generating the AI report.",
-        )
-
-    collab = (
-        db.query(CollaborationAssessment)
-        .filter(
-            CollaborationAssessment.profile_id == profile.id,
-            CollaborationAssessment.status == CollaborationStatus.COMPLETED,
-        )
-        .order_by(CollaborationAssessment.completed_at.desc())
-        .first()
-    )
-    if not collab:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Complete Section 2 (Team Collaboration) before generating the AI report.",
-        )
-
-    collab_scores = _recompute_scores(collab.id, db)
-    try:
-        strengths = json.loads(personality.strengths or "[]")
-    except (ValueError, TypeError):
-        strengths = []
-
-    context = {
-        "skills": [s.name for s in (profile.skills or [])],
-        "experience_level": profile.experience_level.value if profile.experience_level else "",
-        "degree": profile.degree or "",
-        "personality_scores": {
-            "openness": personality.openness_score,
-            "conscientiousness": personality.conscientiousness_score,
-            "extraversion": personality.extraversion_score,
-            "agreeableness": personality.agreeableness_score,
-            "neuroticism": personality.neuroticism_score,
-        },
-        "work_style": personality.work_style or "",
-        "communication_style": personality.communication_style or "",
-        "preferred_role": personality.preferred_role or "",
-        "strengths": strengths,
-        "collaboration_dimensions": {s.dimension.value.title(): s.percentage for s in collab_scores},
-    }
-
-    try:
-        content = generate_report(context)
-    except Exception as exc:
-        logger.warning("AI recommendation generation failed: %s", exc)
-        raise HTTPException(
-            status_code=status.HTTP_502_BAD_GATEWAY,
-            detail="AI report generation failed. Please try again.",
-        )
-
-    now = datetime.now(timezone.utc)
-    recommendation = (
-        db.query(TeamRecommendation)
-        .filter(TeamRecommendation.user_id == current_user.id)
-        .first()
-    )
-    if recommendation:
-        recommendation.content = content
-        recommendation.created_at = now
-    else:
-        recommendation = TeamRecommendation(user_id=current_user.id, content=content)
-        db.add(recommendation)
-
-    db.commit()
-    db.refresh(recommendation)
-    return recommendation
-
-
-# ── GET /collaboration/recommendations ─────────────────────────────────────
-
-@router.get(
-    "/recommendations",
-    response_model=TeamRecommendationOut,
-    summary="Get the AI-powered team recommendation report",
-)
-def get_recommendations(
-    db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-) -> TeamRecommendationOut:
-    """
-    Return the latest AI recommendation report for the current user.
-    """
-    recommendation = (
-        db.query(TeamRecommendation)
-        .filter(TeamRecommendation.user_id == current_user.id)
-        .first()
-    )
-    if not recommendation:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="No AI recommendation report yet.",
-        )
-    return recommendation
 
 
 # ── Internal helper ────────────────────────────────────────────────────────

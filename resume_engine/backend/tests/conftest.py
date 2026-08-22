@@ -109,7 +109,7 @@ def sample_resume_profile_dict() -> dict:
         "achievements": ["1st Place ΓÇö Regional Hackathon 2024"],
         "hackathons": [
             {
-                "name": "HackComp 2024",
+                "name": "Hack It Up 2024",
                 "role": "Backend Developer",
             }
         ],

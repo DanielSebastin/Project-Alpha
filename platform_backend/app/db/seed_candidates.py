@@ -28,7 +28,7 @@ from app.services.candidate_profile import calculate_profile_strength
 from app.utils.skill_normalizer import normalize_skill_name
 
 # Emails on a reserved TLD so --clear can target only seeded rows.
-EMAIL_SUFFIX = "@hackcomp.example"
+EMAIL_SUFFIX = "@hackitup.example"
 
 # ---------------------------------------------------------------------------
 # Randomized building blocks

@@ -14,6 +14,7 @@ import BlueprintBrowsePage from './pages/BlueprintBrowsePage';
 import BlueprintRecommendationsPage from './pages/BlueprintRecommendationsPage';
 import BlueprintInvitationsPage from './pages/BlueprintInvitationsPage';
 import BlueprintDashboardPage from './pages/BlueprintDashboardPage';
+import BlueprintCreatePage from './pages/BlueprintCreatePage';
 import OnboardingProfile from './pages/onboarding/OnboardingProfile';
 import OnboardingSkills from './pages/onboarding/OnboardingSkills';
 import BrandLogo from './components/BrandLogo';
@@ -197,12 +198,17 @@ function App() {
           <Route path="/profile/edit" element={<AppGuard><ProfileForm /></AppGuard>} />
           <Route path="/verification" element={<AppGuard><ResumeVerification /></AppGuard>} />
           <Route path="/assessment" element={<AppGuard><SkillAssessment /></AppGuard>} />
+          <Route path="/test" element={<AppGuard><SkillAssessment /></AppGuard>} />
           <Route path="/hackathons/:id" element={<AppGuard><HackathonDetailsPage /></AppGuard>} />
           <Route path="/hackathons/:id/team/create" element={<AppGuard><BlueprintFormationWizard /></AppGuard>} />
+          <Route path="/blueprints/create" element={<AppGuard><BlueprintCreatePage /></AppGuard>} />
           <Route path="/blueprints/:id/dashboard" element={<AppGuard><BlueprintDashboardPage /></AppGuard>} />
           <Route path="/blueprints/:id/recommendations" element={<AppGuard><BlueprintRecommendationsPage /></AppGuard>} />
           <Route path="/blueprints/my-invitations" element={<AppGuard><BlueprintInvitationsPage /></AppGuard>} />
           <Route path="/blueprints/browse" element={<AppGuard><BlueprintBrowsePage /></AppGuard>} />
+
+          {/* ── Fallback Catch-All Route ── */}
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </div>
     </Router>

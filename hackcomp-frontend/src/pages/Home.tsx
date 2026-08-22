@@ -147,7 +147,7 @@ const Home = () => {
             </h1>
 
             <p className="home-sub rise d3">
-              HackComp validates your technical skills with AI and real GitHub evidence,
+              Hack It Up validates your technical skills with AI and real GitHub evidence,
               then matches you with teams that need exactly what you bring.
             </p>
 
@@ -260,7 +260,7 @@ const Home = () => {
               <GitFork size={14} /> GitHub
             </a>
           </div>
-          <p className="home-footer-copy">© {new Date().getFullYear()} HackComp. Built for builders.</p>
+          <p className="home-footer-copy">© {new Date().getFullYear()} Hack It Up. Built for builders.</p>
         </div>
       </footer>
     </div>

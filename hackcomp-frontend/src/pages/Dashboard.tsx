@@ -216,7 +216,7 @@ const Dashboard = () => {
               <CheckCircle2 size={12} /> Completed
             </span>
           ) : (
-            <Link to="/test" className="progress-card-action">
+            <Link to="/assessment" className="progress-card-action">
               Take Assessment <ArrowRight size={12} />
             </Link>
           )}

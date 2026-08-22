@@ -61,10 +61,6 @@ export const api = {
   getCollabResult: () => apiClient.get('/collaboration/result'),
   getCollabStatus: () => apiClient.get('/collaboration/status'),
 
-  // AI-powered team recommendations
-  getRecommendations: () => apiClient.get('/collaboration/recommendations'),
-  generateRecommendations: () => apiClient.post('/collaboration/recommendations'),
-
   // Personality Assessment
   startPersonalityAssessment: () => apiClient.get('/personality/start'),
   submitPersonalityAssessment: (data: any) => apiClient.post('/personality/submit', data),
